@@ -5,6 +5,6 @@ describe("testing home page", () => {
     cy.visit("http://localhost:3000/");
   });
   it("show testing on cypress", () => {
-    cy.get(".title-home").should("have.text", "Hom");
+    cy.get(".title-home").should("have.text", "Home");
   });
 });
