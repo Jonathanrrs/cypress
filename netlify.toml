@@ -1,2 +1,6 @@
 [[plugins]]
   package = "netlify-plugin-cypress"
+
+[plugins.inputs]
+    preBuild = "cypress run"
+    record = false
