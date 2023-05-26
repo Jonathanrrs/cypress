@@ -1,6 +1,9 @@
 [[plugins]]
   package = "netlify-plugin-cypress"
 
-[plugins.inputs]
-    preBuild = "cypress run"
-    record = false
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[context.pull-request]
+  command = "npm run cypress:run"
