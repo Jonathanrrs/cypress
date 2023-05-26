@@ -6,6 +6,6 @@ describe("testing home page", () => {
     cy.visit("/");
   });
   it("show testing on cypress", () => {
-    cy.get(".title-home").should("have.text", "Homdsadfsfi");
+    cy.get(".title-home").should("have.text", "Home");
   });
 });
